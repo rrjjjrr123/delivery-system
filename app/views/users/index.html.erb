@@ -1,0 +1,5 @@
+<h1>Choose item from the menu </h1>     
+  <%= form_tag('/admin/users/confirm_order') do %>
+    <%=select_tag "order", options_from_collection_for_select(Item.all, "name", "name",readonly: true)%>
+    <%=submit_tag("Submit")%>
+  <% end %>  

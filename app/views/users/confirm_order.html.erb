@@ -1,0 +1,8 @@
+<h1>Click here to confirm your order </h1> 
+  
+  <%= form_tag('/admin/users/update_user') do %>
+    <h5>confirm the order</h5><%=check_box_tag :confirmed, true, false%>
+    <%=submit_tag("Submit")%>
+  <%end%>  
+
+   
